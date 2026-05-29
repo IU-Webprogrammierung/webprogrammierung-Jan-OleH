@@ -32,7 +32,7 @@ Jede Rezeptseite folgt einer einheitlichen Struktur und enthält:
 
 ### Informationsseite 
 
-Die Informationsseite stellt ergänzende Informationen zu den verwendeten Zuaten bereit. Die Inhalte werden kategorisch gegliedert nach: 
+Die Informationsseite stellt ergänzende Informationen zu den verwendeten Zutaten bereit. Die Inhalte werden kategorisch gegliedert nach: 
 - Kohlenhydraten 
 - Proteinquellen 
 - Gemüse 
