@@ -37,7 +37,8 @@ Die Informationsseite stellt ergänzende Informationen zu den verwendeten Zutate
 - Proteinquellen 
 - Gemüse 
 - Früchten 
-- Kräutern 
+- Kräutern
+- Gesunde Fette
 
 Ziel ist es, die gesundheitlichen Eigenschaften und Nährwerte der verwendetetn Zutaten verständlich darzustellen. 
 
