@@ -27,6 +27,7 @@ Jede Rezeptseite folgt einer einheitlichen Struktur und enthält:
 - Angaben zur Portionsgröße
 - Zutatenliste 
 - Zubereitungsschritte
+- Anmerkungen zum Rezept
 - Rezeptnavigation zur Startseite sowie zu vorherigen bzw. nächsten Rezepten 
 - Footer mit Kontaktinformationen 
 
