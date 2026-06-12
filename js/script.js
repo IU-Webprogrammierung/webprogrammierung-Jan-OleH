@@ -1,9 +1,9 @@
-loadComponents("header", "../components/header.html");
+loadComponent("header", "../components/header.html");
 
 
 
 
-async function loadComponents(selector, path) {
+async function loadComponent(selector, path) {
 
     const response = await fetch(path);
     const html = await response.text();
