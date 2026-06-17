@@ -79,4 +79,4 @@ Optional ist die Entwicklung eines Portionsrechners geplant. Nutzerinnen und Nut
 
 ## Projektstatus 
 🚧 In Entwicklung:
-- HTML-Struktur der Informationsseite 
+- Breakpoints mithilfe von Media Queries festlegen 
