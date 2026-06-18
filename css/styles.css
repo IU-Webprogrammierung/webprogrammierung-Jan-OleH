@@ -166,4 +166,13 @@ main {
     .recipe-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .recipe-card {
+        display: block;
+    }
+
+    .recipe-card img {
+        height: 280px;
+        object-fit: cover;
+    }
 }
