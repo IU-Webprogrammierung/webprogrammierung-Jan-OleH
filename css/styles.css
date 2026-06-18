@@ -1,0 +1,46 @@
+/* Grundlayout*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF8E7;
+    color: #222;
+    line-height: 1.5;
+}
+
+/* Bilder */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Überschriften */
+h1, 
+h2, 
+h3 {
+    color: #2E7D32;
+}
+
+/* Links */
+
+a {
+    color: #2E7D32;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Inhaltsbereiche */
+header, 
+main,
+footer {
+    padding: 1rem;
+}
