@@ -141,4 +141,13 @@ main {
     padding: 1rem;
 }
 
+/* Tablet Layout */
 
+@media (min-width: 769px) {
+    .recipe-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
+    }
+}
