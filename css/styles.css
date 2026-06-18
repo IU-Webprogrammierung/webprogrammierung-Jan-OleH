@@ -60,7 +60,8 @@ header h1 {
 
 .hero img {
     width: 100%;
-    height: auto;
+    max-height: 360px;
+    object-fit: contain;
 }
 
 /* Rezeptkarten */
@@ -79,7 +80,8 @@ header h1 {
 
 .recipe-card img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
 }
 
 .recipe-card h2 {
