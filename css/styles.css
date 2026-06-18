@@ -52,6 +52,17 @@ header h1 {
     text-decoration: none;
 }
 
+/* Hero-Bereich */
+
+.hero {
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
 /* Bilder */
 
 img {
