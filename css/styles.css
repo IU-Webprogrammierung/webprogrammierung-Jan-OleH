@@ -136,9 +136,8 @@ a:hover {
 }
 
 /* Inhaltsbereiche */
-header, 
-main,
-footer {
+
+main {
     padding: 1rem;
 }
 
