@@ -157,3 +157,11 @@ main {
         align-items: center;
     }
 }
+
+/* Desktop Layout */
+
+@media (min-width: 1280px){
+    .recipe-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
