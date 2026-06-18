@@ -144,6 +144,12 @@ main {
 /* Tablet Layout */
 
 @media (min-width: 769px) {
+    
+    .main-navigation > ul{
+        display: flex;
+        gap: 2rem;
+    }
+    
     .recipe-card {
         display: grid;
         grid-template-columns: 1fr 1fr;
