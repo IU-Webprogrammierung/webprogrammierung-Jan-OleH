@@ -63,6 +63,33 @@ header h1 {
     height: auto;
 }
 
+/* Rezeptkarten */
+
+.recipe-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.recipe-card {
+    background-color: #FFF8E7;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-card a {
+    display: inline-block;
+    background-color: #FF9800;
+    color: black;
+    padding: 0.75rem 1 rem;
+    border-radius: 6px;
+}
+
 /* Bilder */
 
 img {
