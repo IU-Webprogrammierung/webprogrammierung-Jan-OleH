@@ -61,7 +61,7 @@ header h1 {
 }
 
 .hero img {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto 2rem auto;
 }
 
@@ -86,14 +86,14 @@ header h1 {
 }
 
 .recipe-card h2 {
-    color: #2E7D32
+    color: #2E7D32;
 }
 
 .recipe-card a {
     display: inline-block;
     background-color: #FF9800;
     color: black;
-    padding: 0.75rem 1 rem;
+    padding: 0.75rem 1rem;
     border-radius: 6px;
 }
 
@@ -107,7 +107,7 @@ footer {
 }
 
 footer h2 {
-    color:#2E7D32
+    color:#2E7D32;
 }
 
 
@@ -259,10 +259,6 @@ main {
         grid-column: 2;
     }
 
-    .recipe-description {
-        grid-column: 2;
-    }
-
     .recipe-ingredients {
         grid-column: 1;
     }
@@ -287,42 +283,7 @@ main {
     gap: 2rem;
 }
 
-.carbohydrates {
-    display: grid;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    gap: 1rem;
-}
-
-.proteins {
-    display: grid;
-    padding: 1rem;
-    gap: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.vegetables {
-    display: grid;
-    padding: 1rem;
-    gap: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.fruits {
-    display: grid;
-    padding: 1rem;
-    gap: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.herbs {
-    display: grid;
-    padding: 1rem;
-    gap: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.healthy-fats {
+.info-category {
     display: grid;
     padding: 1rem;
     gap: 1rem;
