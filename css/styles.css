@@ -279,3 +279,67 @@ main {
         grid-column: 1 / -1;
     }
 }
+
+/* :::::::::::: INFO.html :::::::::::: */ 
+
+.info-page {
+    display: grid;
+    gap: 2rem;
+}
+
+.carbohydrates {
+    display: grid;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    gap: 1rem;
+}
+
+.proteins {
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.vegetables {
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.fruits {
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.herbs {
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.healthy-fats {
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.ingredient-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 5px solid #2E7D32;
+}
+
+/* Desktop Layout */
+
+@media (min-width: 1280px) {
+    .info-page {
+        grid-template-columns: 1fr 1fr;
+    }
+}
