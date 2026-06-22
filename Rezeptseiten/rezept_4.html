@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Griechischer Kartoffelsalat - Gesunde Rezeptideen</title>
+    <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/script.js" defer></script>
 </head>
 <body>
@@ -11,16 +12,17 @@
         
     </header>
 
-    <main>
-        <article>
-            <img src="../images/rezeptbild_4.png" alt="Beschreibung des Rezeptbildes" width="50%">
+    <main class="recipe-page">
+        <article class="recipe">
+            <img class="recipe-image" src="../images/rezeptbild_4.png" alt="Beschreibung des Rezeptbildes" width="50%">
 
-            <header>
+            <div class="recipe-info">
+            <header class="recipe-header">
                 <h2>Griechischer Kartoffelsalat</h2>
                 <p>Arbeitszeit: ca. 30 Minuten</p>
             </header>
 
-            <section>
+            <section class="recipe-description">
                 <h3>Beschreibung</h3>
                 <p>
                     Dieser griechische Kartoffelsalat bringt mediterranes Flair auf den Teller. 
@@ -30,7 +32,13 @@
                 </p>
             </section>
 
-            <section>
+            <aside class="recipe-meta">
+                <p>Angabe für 2 Personen</p>
+                <p>Arbeitszeit: ca. 30 Minuten</p>
+            </aside>
+            </div>
+
+            <section class="recipe-ingredients">
                 <h3>Zutaten</h3>
                 <p>Angabe für 2 Personen</p>
                 <ul>
@@ -47,7 +55,7 @@
                 </ul>
             </section>
 
-            <section>
+            <section class="recipe-instructions">
                 <h3>Zubereitung</h3>
                 <ol>
                     <li>Wasser mit Salz aufkochen.</li>
@@ -62,7 +70,7 @@
                 </ol>
             </section>
 
-            <section>
+            <section class="recipe-notes">
             <h3>Weitere Anmerkungen</h3>
             <ul>
                 <li>Der Kartoffelsalat schmeckt sowohl lauwarm als auch gut gekühlt.</li>
@@ -71,7 +79,7 @@
             </ul>
             </section>
 
-            <nav aria-label="Rezeptnavigation">
+            <nav class="recipe-navigation" aria-label="Rezeptnavigation">
                 <a href="rezept_3.html">Zurück</a>
                 <a href="../index.html">Startseite</a>
             </nav>

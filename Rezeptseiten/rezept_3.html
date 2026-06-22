@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Big Mac Salat - Gesunde Rezeptideen</title>
+    <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/script.js" defer></script>
 </head>
 <body>
@@ -11,13 +12,13 @@
         
     </header>
 
-    <main>
-        <article>
-            <img src="../images/rezeptbild_3.png" alt="Beschreibung des Rezeptbildes" width="50%">
-
-            <header>
+    <main class="recipe-page">
+        <article class="recipe">
+            <img class="recipe-image" src="../images/rezeptbild_3.png" alt="Beschreibung des Rezeptbildes" width="50%">
+            
+            <div class="recipe-info">
+            <header class="recipe-header">
                 <h2>Big Mac Salat</h2>
-                <p>Arbeitszeit: ca. 25 Minuten</p>
             </header>
 
             <section>
@@ -29,7 +30,13 @@
                 </p>
             </section>
 
-            <section>
+            <aside class="recipe-meta">
+                <p>Angabe für 2 Personen</p>
+                <p>Arbeitszeit: ca 25 Minuten</p>
+            </aside>
+            </div>
+
+            <section class="recipe-ingredients">
                 <h3>Zutaten</h3>
                 <p>Angabe für 2 Personen</p>
                 <h4>Für die Big Mac Soße </h4>
@@ -58,7 +65,7 @@
                 </ul>
             </section>
 
-            <section>
+            <section class="recipe-instructions">
                 <h3>Zubereitung</h3>
                 <ol>
                     <li>Olivenöl in einer Pfanne auf mittlerer Hitze erhitzen und darin das Hackfleisch scharf anbraten, bis es gebräunt ist. Anschließend salzen und pfeffern.</li>
@@ -68,7 +75,7 @@
                 </ol>
             </section>
 
-            <section>
+            <section class="recipe-notes">
             <h3>Weitere Anmerkungen</h3>
             <ul>
                 <li>Das Dressing kann je nach Geschmack mit weiteren Gewürzen verfeinert werden.</li>
@@ -77,7 +84,7 @@
             </ul>
             </section>
 
-            <nav aria-label="Rezeptnavigation">
+            <nav class="recipe-navigation" aria-label="Rezeptnavigation">
                 <a href="rezept_2.html">Zurück</a>
                 <a href="../index.html">Startseite</a>
                 <a href="rezept_4.html">Nächstes Rezept</a>
