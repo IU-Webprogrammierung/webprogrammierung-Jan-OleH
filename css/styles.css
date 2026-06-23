@@ -258,6 +258,14 @@ main {
     flex-wrap: wrap;
 }
 
+.recipe-navigation a {
+    display: inline-block;
+    background-color: #FF9800;
+    color: black;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+}
+
 /* Desktop Layout */
 
 @media (min-width: 1280px) {
@@ -319,6 +327,14 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+}
+
+.info-navigation a {
+    display: inline-block;
+    background-color: #FF9800;
+    color: black;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
 }
 
 /* Desktop Layout */
