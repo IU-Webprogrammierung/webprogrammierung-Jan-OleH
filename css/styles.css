@@ -57,10 +57,18 @@ header h1 {
 .main-navigation .nav-label {
     display: inline-block;
     padding: 0.6rem 1rem;
-    color: white;
+    color: black;
+    background-color: #FF9800;
+    border: 2px solid white;
     border-radius: 6px;
     font-weight: bold;
     text-decoration: none;
+}
+
+.main-navigation a:hover, 
+.main-navigation .nav-label:hover {
+    background-color: #FFF8E7;
+    color: black;
 }
 
 /* Tablet Layout */
