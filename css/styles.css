@@ -28,10 +28,23 @@ header {
 }
 
 .logo {
-    width: 80px;
-    height: auto;
-    border: 2px solid #FF9800;
+   display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 80px;
+
     background-color: #E8F5E9;
+
+    border-radius: 16px;
+
+    transition: 0.2s;
+}
+
+.logo:hover {
+    background-color: #FFB74D;
+    transform: scale(1.05);
 }
 
 header h1 {
@@ -72,6 +85,7 @@ header h1 {
 .main-navigation .nav-label:hover {
     background-color: #FFF8E7;
     color: black;
+    transform: scale(1.05);
 }
 
 /* Tablet Layout */
