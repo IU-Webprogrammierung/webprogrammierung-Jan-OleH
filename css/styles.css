@@ -129,8 +129,14 @@ footer h2 {
 }
 
 .hero img {
+    display: block;
+    width: 100%;
     max-width: 1400px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center 25%;
     margin: 0 auto 2rem auto;
+    border-radius: 8px;
 }
 
 /* Rezeptkarten */
