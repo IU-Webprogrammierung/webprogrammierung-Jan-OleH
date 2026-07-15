@@ -25,3 +25,29 @@ async function loadComponent(selector, path) {
 }
 
 
+// Navigation initialisieren
+
+function initializeNavigation() {
+    const burgerButton = document.querySelector(".burger-button");
+    const mainNavigation = document.querySelector(".main-navigation");
+
+    if (!burgerButton || !mainNavigation) {
+        return;
+    }
+
+    burgerButton.addEventListener("click", () => {
+        const isOpen = mainNavigation.classList.toggle("is-open");
+
+        burgerButton.setAttribute("aria-expanded", String(isOpen));
+        burgerButton.setAttribute(
+            "aria-label",
+            isOpen
+                ? "Hauptnavigation schließen"
+                : "Hauptnavigation öffnen"
+        );
+
+        burgerButton.classList.toggle("is-open", isOpen);
+    });
+}
+
+
