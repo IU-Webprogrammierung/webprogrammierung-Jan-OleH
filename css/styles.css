@@ -27,6 +27,27 @@ header {
     margin-bottom: 1rem;
 }
 
+.site-branding h1 {
+    flex: 1;
+    margin: 0;
+
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+@media (min-width: 768px) {
+    .site-branding h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .site-branding h1 {
+        font-size: 2rem;
+    }
+}
+
 .logo {
     width: 60px;
     height: auto;
@@ -62,12 +83,6 @@ header {
     transform: scale(1.05);
 }
 
-header h1 {
-    color: white;
-    font-size: 2rem;
-    margin: 0;
-    letter-spacing: 0.5px;
-}
 
 /* Hauptnavigation */
 
