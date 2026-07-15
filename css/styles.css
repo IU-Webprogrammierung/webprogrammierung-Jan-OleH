@@ -90,7 +90,7 @@ header h1 {
 
 /* Tablet Layout */
 
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
     
     .main-navigation > ul{
         display: flex;
