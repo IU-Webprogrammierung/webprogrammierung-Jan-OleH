@@ -107,6 +107,10 @@ header {
     border-radius: 6px;
     font-weight: bold;
     text-decoration: none;
+    transition: 
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
 }
 
 .main-navigation a:hover, 
@@ -198,7 +202,7 @@ footer h2 {
 
 .recipe-card img {
     width: 100%;
-    height: 240px;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
 }
 
@@ -273,7 +277,6 @@ main {
 
     .recipe-card img {
         width: 100%;
-        height: 260px;
         object-fit: cover;
     }
 
@@ -333,7 +336,6 @@ main {
 
 .recipe-description {
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 
@@ -366,8 +368,9 @@ main {
 
 /* Listen */
 
-.recipe-ingredients ul,
-.recipe-notes ul {
+.recipe-ingredients li,
+.recipe-instructions li,
+.recipe-notes li {
     margin-bottom: 0.4rem;
 }
 
