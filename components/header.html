@@ -3,15 +3,39 @@
         <img class ="logo" src="../images/logo.png" alt="Logo der Webseite">
     </a>
     <h1>Gesunde Rezeptideen</h1>
+
+    <button
+        class="burger-button"
+        type="button"
+        aria-label="Hauptnavigation öffnen"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+    >
+        <span aria-hidden="true">☰</span>
+    </button>
 </div>
 
-<nav class="main-navigation" aria-label="Hauptnavigation">
+<nav
+id="main-navigation" 
+class="main-navigation" 
+aria-label="Hauptnavigation">
     <ul>
         <li><a href="../index.html">Startseite</a></li>
         <li>
-            <span class="nav-label">Rezepte</span>
-            <ul>
+            <button
+                class="recipe-menu-button"
+                type="button"
+                aria-expanded="false"
+                aria-controls="recipe-submenu"
+            >
+                Rezepte
 
+            </button>
+            <ul id="recipe-submenu" class="recipe-submenu">
+                <li><a href="../Rezeptseiten/rezept_1.html">Nudeln mit Paprikasoße</a></li>
+                <li><a href="../Rezeptseiten/rezept_2.html">Leichte Nudelpfanne mit Hähnchen</a></li>
+                <li><a href="../Rezeptseiten/rezept_3.html">Big Mac Salat</a></li>
+                <li><a href="../Rezeptseiten/rezept_4.html">Griechischer Kartoffelsalat</a></li>
             </ul>
         </li>
         <li><a href="../info/info.html">Informationsseite</a></li>
