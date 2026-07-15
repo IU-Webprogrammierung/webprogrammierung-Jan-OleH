@@ -84,7 +84,53 @@ header {
 }
 
 
+
+
 /* Hauptnavigation */
+
+.burger-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    gap: 5px;
+
+    border: 2px solid white;
+    border-radius: 6px;
+
+    background-color: #FF9800;
+    color: black;
+
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.burger-button span{
+    display: block;
+
+    width: 24px;
+    height: 3px;
+    margin: 1px 0;
+
+    background-color: black;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.main-navigation {
+    display: none;
+}
+
+.recipe-submenu {
+    display: none;
+}
+
+.recipe-submenu.is-open{
+    display: block;
+}
 
 .main-navigation > ul {
     list-style-type: none;
@@ -123,6 +169,14 @@ header {
 /* Tablet Layout */
 
 @media (min-width: 768px) {
+
+    .burger-button {
+        display: none;
+    }
+
+    .main-navigation {
+        display: block;
+    }
     
     .main-navigation > ul{
         display: flex;
