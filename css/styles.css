@@ -143,29 +143,50 @@ header {
 }
 
 .recipe-submenu {
+    position: static;
     display: block;
-    
+
+    max-height: 0;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
     opacity: 0;
     visibility: hidden;
-    transform: translate(-8px);
-
+    transform: translateY(-8px);
     pointer-events: none;
 
     transition:
+        max-height 0.3s ease,
         opacity 0.2s ease,
         transform 0.2s ease,
         visibility 0.2s ease;
-    
-    margin: 0.5rem 0 0;
-    padding: 0;
 }
 
-.recipe-submenu.is-open{
+
+.recipe-submenu.is-open {
+    max-height: 500px;
+
+    margin-top: 0.5rem;
+
     opacity: 1;
     visibility: visible;
-    transform: translate(0);
-
+    transform: translateY(0);
     pointer-events: auto;
+}
+
+.recipe-submenu a {
+    transition:
+        background-color 0.2s ease, 
+        transform 0.2s ease;
+}
+
+.recipe-submenu a:hover,
+.recipe-submenu a:focus-visible {
+    background-color: #FFF8E7;
+    transform: translate(4px);
 }
 
 .recipe-menu-button {
@@ -188,6 +209,40 @@ header {
 
 .recipe-menu-button[aria-expanded="true"] .dropdown-arrow {
     transform: rotate(180deg);
+}
+
+.burger-button,
+.recipe-menu-button {
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.burger-button:hover,
+.burger-button:focus-visible,
+.recipe-menu-button:hover,
+.recipe-menu-button:focus-visible {
+    background-color: #FFF8E7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #FFB74D;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 .main-navigation > ul {
@@ -243,11 +298,22 @@ header {
         z-index: 20;
 
         min-width: 260px;
-        padding: 0.5rem;
+
+        /* Mobile-Höhenbegrenzung neutralisieren */
+        max-height: none;
+        overflow: visible;
+
+        /* Im geschlossenen Zustand kein sichtbarer Rand */
+        margin: 0;
+        padding: 0;
 
         background-color: #2E7D32;
         border-radius: 8px;
-        box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+    }
+
+    .recipe-menu.is-open {
+        padding: 0.5rem;
     }
 
     .recipe-submenu li {
