@@ -30,14 +30,19 @@ async function loadComponent(selector, path) {
 function initializeNavigation() {
     const burgerButton = document.querySelector(".burger-button");
     const mainNavigation = document.querySelector(".main-navigation");
+    const recipeMenuButton = document.querySelector(".recipe-menu-button");
+    const recipeSubmenu = document.querySelector(".recipe-submenu");
 
     if (!burgerButton || !mainNavigation) {
         return;
     }
 
+    if(burgerButton && mainNavigation) {
+
     burgerButton.addEventListener("click", () => {
         const isOpen = mainNavigation.classList.toggle("is-open");
 
+        burgerButton.classList.toggle("is-open", isOpen);
         burgerButton.setAttribute("aria-expanded", String(isOpen));
         burgerButton.setAttribute(
             "aria-label",
@@ -46,8 +51,20 @@ function initializeNavigation() {
                 : "Hauptnavigation öffnen"
         );
 
-        burgerButton.classList.toggle("is-open", isOpen);
+        if(!isOpen && recipeMenuButton && recipeSubmenu) {
+            recipeSubmenu.classList.remove("is-open");
+            recipeMenuButton.setAttribute("aria-expanded", "false");
+        }
+        
     });
+}
+
+    if(recipeMenuButton && recipeSubmenu) {
+        recipeMenuButton.addEventListener("click", () => {
+            const isOpen = recipeSubmenu.classList.toggle("is-open");
+            recipeMenuButton.setAttribute("aria-expanded", String(isOpen));
+        });
+    }
 }
 
 // Initialisierung
