@@ -144,10 +144,24 @@ header {
 
 .recipe-submenu {
     display: none;
+    list-style: none;
+    margin: 0.5rem 0 0;
+    padding: 0;
 }
 
 .recipe-submenu.is-open{
     display: block;
+}
+
+.recipe-menu-button {
+    padding: 0.6rem 1rem;
+    color: black;
+    background-color: #FF9800;
+    border: 2px solid white;
+    border-radius: 6px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .main-navigation > ul {
@@ -190,6 +204,33 @@ header {
 
     .burger-button {
         display: none;
+    }
+
+    .recipe-menu {
+        position: relative;
+    }
+
+    .recipe-submenu {
+        position: absolute;
+        top: calc(100% + 0.5rem);
+        left: 0;
+        z-index: 20;
+
+        min-width: 260px;
+        padding: 0.5rem;
+
+        background-color: #2E7D32;
+        border-radius: 8px;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+    }
+
+    .recipe-submenu li {
+        margin: 0;
+    }
+
+    .recipe-submenu a {
+        display: block;
+        margin: 0.25rem 0;
     }
 
     .main-navigation {
