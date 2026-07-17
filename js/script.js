@@ -67,6 +67,61 @@ function initializeNavigation() {
     }
 }
 
+// Portionsrechner
+
+function initializePortionCalculator() {
+    const decreaseButton = document.querySelector(".decrease-portions");
+    const increaseButton = document.querySelector(".increase-portions");
+    const portionCount = document.querySelector("#portion-count");
+    const ingredientAmounts = document.querySelectorAll(".ingredient-amount");
+
+    if (
+        !decreaseButton ||
+        !increaseButton ||
+        !portionCount ||
+        ingredientAmounts.length === 0
+    ) {
+        return;
+    }
+
+    const basePortions = 2;
+    let currentPortions = basePortions;
+
+    function updateAmounts() {
+        portionCount.textContent = String(currentPortions);
+
+        ingredientAmounts.forEach((amountElement) => {
+            const baseAmount = Number(amountElement.dataset.baseAmount);
+            const calculatedAmount =
+                baseAmount * (currentPortions / basePortions);
+
+            amountElement.textContent = formatAmount(calculatedAmount);
+        });
+
+        decreaseButton.disabled = currentPortions <= 1;
+    }
+
+    increaseButton.addEventListener("click", () => {
+        currentPortions += 1;
+        updateAmounts();
+    });
+
+    decreaseButton.addEventListener("click", () => {
+        if (currentPortions > 1) {
+            currentPortions -= 1;
+            updateAmounts();
+        }
+    });
+
+    updateAmounts();
+}
+
+function formatAmount(amount) {
+    return Number.isInteger(amount)
+        ? String(amount)
+        : amount.toFixed(1).replace(".", ",");
+}
+
 // Initialisierung
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -74,4 +129,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     await loadComponent("footer", "../components/footer.html");
 
     initializeNavigation();
+    initializePortionCalculator();
 });
