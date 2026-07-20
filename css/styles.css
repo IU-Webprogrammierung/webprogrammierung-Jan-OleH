@@ -592,6 +592,19 @@ main {
     transform: scale(1.05);
 }
 
+#portion-count {
+    width: 3rem;
+
+    text-align: center;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    border: 2px solid #2E7D32;
+    border-radius: 6px;
+    padding: .25rem;
+}
+
 .recipe-meta {
     display: flex;
     gap: 1rem;
