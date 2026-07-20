@@ -74,6 +74,7 @@ function initializePortionCalculator() {
     const increaseButton = document.querySelector(".increase-portions");
     const portionCount = document.querySelector("#portion-count");
     const ingredientAmounts = document.querySelectorAll(".ingredient-amount");
+    
 
     if (
         !decreaseButton ||
@@ -88,7 +89,7 @@ function initializePortionCalculator() {
     let currentPortions = basePortions;
 
     function updateAmounts() {
-        portionCount.textContent = String(currentPortions);
+        portionCount.value = currentPortions;
 
         ingredientAmounts.forEach((amountElement) => {
             const baseAmount = Number(amountElement.dataset.baseAmount);
@@ -114,6 +115,18 @@ function initializePortionCalculator() {
     });
 
     updateAmounts();
+
+    portionCount.addEventListener("input", () => {
+
+    currentPortions = Number(portionCount.value);
+
+    if (currentPortions < 1) {
+        currentPortions = 1;
+    }
+
+    updateAmounts();
+
+});
 }
 
 function formatAmount(amount) {
