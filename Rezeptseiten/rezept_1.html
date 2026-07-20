@@ -50,9 +50,16 @@
                             -
                         </button>
                         
-                        <span class="portion-display">
-                            <span id="portion-count">2</span> Personen
-                        </span>
+                        <div class="portion-display">
+                            <input 
+                            id="portion-count"
+                            type="number"
+                            min="1"
+                            max="12"
+                            value="2">
+
+                            <span>Personen</span>
+                        </div>
 
                         <button
                         class="portion-button increase-portions"
